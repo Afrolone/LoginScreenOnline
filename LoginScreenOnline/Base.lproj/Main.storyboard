@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rQP-CP-58e">
-                                <rect key="frame" x="10" y="108" width="394" height="129"/>
+                                <rect key="frame" x="10" y="108" width="394" height="194"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="39t-FQ-srX">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
@@ -37,6 +37,12 @@
                                             <action selector="onLoginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQ1-R5-Y0H"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJU-5b-Inq">
+                                        <rect key="frame" x="0.0" y="144" width="394" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -51,6 +57,7 @@
                     <navigationItem key="navigationItem" id="KuI-Hu-hoF"/>
                     <connections>
                         <outlet property="emailTextField" destination="39t-FQ-srX" id="muf-WV-2v0"/>
+                        <outlet property="loadingLabel" destination="tJU-5b-Inq" id="Ss3-n8-Q0Z"/>
                         <outlet property="loginButton" destination="xjr-cV-MCt" id="v47-Ni-Ier"/>
                         <outlet property="passwordTextField" destination="Uac-n3-gMp" id="vGM-gq-0fU"/>
                     </connections>
